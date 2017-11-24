@@ -14,9 +14,9 @@ const productCatalog = {
 };
 
 const deliveryRules = [
-  {value:5000, cost:495},
-  {value:9001, cost:295}, //including 50 as 2.95
-  {value:9002, cost:0}  //including 90 as free
+  {value:5000, cost:495},  // < 50
+  {value:9000, cost:295},  //including >=50 & <90 at 295
+  {value:9001, cost:0}     //including >=90 as free
 ];
 
 const specialOffers = {
